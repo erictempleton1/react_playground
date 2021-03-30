@@ -1,0 +1,26 @@
+.Nav__Container {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 2rem;
+  background-color: whitesmoke;
+}
+
+.Nav__Link {
+  font-size: 22px;
+  font-weight: 500;
+  color: darkslateblue
+}
+
+.Nav__Link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: darkslateblue;
+  transition: width 0.3s ease-in-out;
+}
+
+.Nav__Link:hover:after {
+  width: 100%;
+}
