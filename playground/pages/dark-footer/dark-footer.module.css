@@ -1,0 +1,16 @@
+.Content {
+  height: 400px;
+  background-color: whitesmoke;
+}
+
+/* Start Footer */
+.Content__Footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  justify-items: center;
+
+  background-color: #14213d;
+  color: white;
+  padding: 1rem;
+}
