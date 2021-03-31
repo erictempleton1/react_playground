@@ -1,16 +1,86 @@
-.Content {
-  height: 400px;
+.Content__Container {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: whitesmoke;
 }
 
-/* Start Footer */
-.Content__Footer {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 10px;
-  justify-items: center;
 
+/* Start Footer container */
+.Content__Footer {
+  /* Grid stuff */
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+
+  /* Spacing and color stuff */
   background-color: #14213d;
   color: white;
   padding: 1rem;
+}
+
+
+/* Single column container */
+.Footer__Column {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  font-size: 14px;
+
+  /* Temporary */
+  border: 3px solid red;
+}
+
+
+/* Colum specific styles */
+.Column__Header {
+  opacity: 0.8;
+  text-transform: uppercase;
+}
+
+.Column__Link {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.Column__Link:hover {
+  opacity: 0.8;
+}
+
+.Column__Link:last-child {
+  padding-bottom: 0rem;
+}
+
+
+/* Social icons */
+.Column__Social_Icons_Container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.Social__Icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  fill: white;
+  opacity: 0.8;
+}
+
+.Column__Social_Link:hover {
+  opacity: 0.8;
+}
+
+
+/* Media queries */
+@media (min-width: 768px) {
+  .Content__Footer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .Content__Footer {
+    grid-template-columns: repeat(4, 1fr);
+  }
 }
