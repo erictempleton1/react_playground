@@ -6,21 +6,19 @@
   background-color: whitesmoke;
 }
 
-
 /* Start Footer container */
 .Content__Footer {
   /* Grid stuff */
   display: grid;
   grid-template-columns: repeat(1, 1fr);
+  grid-template-rows: 1fr;
   gap: 10px;
-  grid-auto-rows: minmax(100px, auto);
 
   /* Spacing and color stuff */
   background-color: #14213d;
   color: white;
   padding: 1rem;
 }
-
 
 /* Single column container */
 .Footer__Column {
@@ -32,7 +30,6 @@
   /* Temporary */
   border: 3px solid red;
 }
-
 
 /* Colum specific styles */
 .Column__Header {
@@ -53,13 +50,11 @@
   padding-bottom: 0rem;
 }
 
-
 /* Social icons */
 .Column__Social_Icons_Container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
+  margin-left: auto;
 }
+
 .Social__Icon {
   width: 1.5rem;
   height: 1.5rem;
@@ -71,16 +66,27 @@
   opacity: 0.8;
 }
 
+/* Bottom portion of the footer  */
+.Footer__Bottom {
+  padding: 1rem;
+  /* Temporary */
+  border: 3px solid red;
+}
+
+.Footer__Bottom_Container {
+  display: inline;
+}
 
 /* Media queries */
 @media (min-width: 768px) {
   .Content__Footer {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
-}
-
-@media (min-width: 1024px) {
-  .Content__Footer {
-    grid-template-columns: repeat(4, 1fr);
+  .Footer__Bottom {
+    grid-column-start: span 3;
+  }
+  .Footer__Bottom_Container {
+    display: flex;
+    align-items: center;
   }
 }

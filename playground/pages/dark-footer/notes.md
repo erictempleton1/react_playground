@@ -41,3 +41,7 @@
 * Change hover text opactiy.
 * Remove padding from the `last-child` in the column so we don't have extra space added needlessly.
   * Generally don't like using structural helpers like this because they are guaranteed to break if you change the order of elements. But I feel reasonably confident I will always want the last item to have less padding.
+
+`grid-column-start`
+* Specify the start position within a grid column.
+* Basically this column is pretending to be a row. Not sure how great an idea this is, but it seems to work.

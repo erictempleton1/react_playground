@@ -31,20 +31,28 @@ export default function Index() {
           <a href="#news" className={styles.Column__Link}>News</a>
         </div>
 
-        <div className={styles.Footer__Column}>
-          <div className={styles.Column__Social_Icons_Container}>
-            <a href="#twitter" className={styles.Column__Social_Link}>
-              <TwitterIcon />
-            </a>
-            <a href="#facebook" className={styles.Column__Social_Link}>
-              <FacebookIcon />
-            </a>
-            <a href="#instagram" className={styles.Column__Social_Link}>
-              <InstagramIcon />
-            </a>
-            <a href="#youtube" className={styles.Column__Social_Link}>
-              <YouTubeIcon />
-            </a>
+        <div className={styles.Footer__Bottom}>
+          <div className={styles.Footer__Bottom_Container}>
+            <div className={styles.Column__Link}>
+              Awesome Company LLC.
+              </div>
+            <a href="#subscribe" className={styles.Column__Link}>
+              Subscribe to our newsletter!
+              </a>
+            <div className={styles.Column__Social_Icons_Container}>
+              <a href="#twitter" className={styles.Column__Social_Link}>
+                <TwitterIcon />
+              </a>
+              <a href="#facebook" className={styles.Column__Social_Link}>
+                <FacebookIcon />
+              </a>
+              <a href="#instagram" className={styles.Column__Social_Link}>
+                <InstagramIcon />
+              </a>
+              <a href="#youtube" className={styles.Column__Social_Link}>
+                <YouTubeIcon />
+              </a>
+            </div>
           </div>
         </div>
       </footer>
