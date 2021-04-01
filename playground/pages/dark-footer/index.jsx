@@ -31,14 +31,18 @@ export default function Index() {
           <a href="#news" className={styles.Column__Link}>News</a>
         </div>
 
+        <div className={styles.Footer__Column}>
+          <div className={styles.Column__Header}>Legal</div>
+          <a href="#claim" className={styles.Column__Link}>Claim</a>
+          <a href="#blog" className={styles.Column__Link}>Privacy</a>
+          <a href="#careers" className={styles.Column__Link}>Careers</a>
+        </div>
+
         <div className={styles.Footer__Bottom}>
           <div className={styles.Footer__Bottom_Container}>
             <div className={styles.Column__Link}>
               Awesome Company LLC.
-              </div>
-            <a href="#subscribe" className={styles.Column__Link}>
-              Subscribe to our newsletter!
-              </a>
+            </div>
             <div className={styles.Column__Social_Icons_Container}>
               <a href="#twitter" className={styles.Column__Social_Link}>
                 <TwitterIcon />

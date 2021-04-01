@@ -8,28 +8,22 @@
 
 /* Start Footer container */
 .Content__Footer {
-  /* Grid stuff */
   display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 1fr;
-  gap: 10px;
-
-  /* Spacing and color stuff */
+  grid-template-columns: repeat(2, 1fr);
   background-color: #14213d;
   color: white;
   padding: 1rem;
 }
 
+
 /* Single column container */
 .Footer__Column {
   display: flex;
   flex-direction: column;
-  padding: 1rem;
   font-size: 14px;
-
-  /* Temporary */
-  border: 3px solid red;
+  padding: 1rem;
 }
+
 
 /* Colum specific styles */
 .Column__Header {
@@ -46,47 +40,48 @@
   opacity: 0.8;
 }
 
-.Column__Link:last-child {
-  padding-bottom: 0rem;
-}
 
 /* Social icons */
-.Column__Social_Icons_Container {
-  margin-left: auto;
-}
-
 .Social__Icon {
   width: 1.5rem;
   height: 1.5rem;
   fill: white;
-  opacity: 0.8;
+}
+
+.Column__Social_Link {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .Column__Social_Link:hover {
   opacity: 0.8;
 }
 
+
 /* Bottom portion of the footer  */
 .Footer__Bottom {
+  grid-column: span 2 / span 2;
   padding: 1rem;
-  /* Temporary */
-  border: 3px solid red;
+  opacity: 0.8;
 }
 
 .Footer__Bottom_Container {
-  display: inline;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 
 /* Media queries */
 @media (min-width: 768px) {
   .Content__Footer {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
   }
   .Footer__Bottom {
-    grid-column-start: span 3;
+    grid-column: span 4;
   }
   .Footer__Bottom_Container {
-    display: flex;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
   }
 }
