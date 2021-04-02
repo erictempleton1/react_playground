@@ -1,0 +1,17 @@
+.Container {
+  display: flex;
+  width: 700px;
+  background: #8f8f8f;
+}
+
+.Resizer {
+  border: solid 1px #ddd;
+  background: #f0f0f0;
+  border-right: solid 10px lightskyblue;
+}
+
+.Right__Arrows {
+  width: 40px;
+  height: 40px;
+  fill: none;
+}
