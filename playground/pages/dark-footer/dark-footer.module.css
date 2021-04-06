@@ -1,4 +1,5 @@
 .Content__Container {
+  font-family: "Roboto", sans-serif;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -7,6 +8,7 @@
 }
 
 /* Start Footer container */
+
 .Content__Footer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -15,8 +17,8 @@
   padding: 1rem;
 }
 
-
 /* Single column container */
+
 .Footer__Column {
   display: flex;
   flex-direction: column;
@@ -24,14 +26,16 @@
   padding: 1rem;
 }
 
-
 /* Colum specific styles */
+
 .Column__Header {
   opacity: 0.8;
   text-transform: uppercase;
 }
 
 .Column__Link {
+  color: white;
+  text-decoration: none;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
 }
@@ -40,8 +44,8 @@
   opacity: 0.8;
 }
 
-
 /* Social icons */
+
 .Social__Icon {
   width: 1.5rem;
   height: 1.5rem;
@@ -57,8 +61,8 @@
   opacity: 0.8;
 }
 
-
 /* Bottom portion of the footer  */
+
 .Footer__Bottom {
   grid-column: span 2 / span 2;
   padding: 1rem;
@@ -71,8 +75,8 @@
   align-items: center;
 }
 
-
 /* Media queries */
+
 @media (min-width: 768px) {
   .Content__Footer {
     grid-template-columns: repeat(4, 1fr);

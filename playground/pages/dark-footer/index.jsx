@@ -40,9 +40,9 @@ export default function Index() {
 
         <div className={styles.Footer__Bottom}>
           <div className={styles.Footer__Bottom_Container}>
-            <div className={styles.Column__Link}>
+            <a href="#company" className={styles.Column__Link}>
               Awesome Company LLC.
-            </div>
+            </a>
             <div className={styles.Column__Social_Icons_Container}>
               <a href="#twitter" className={styles.Column__Social_Link}>
                 <TwitterIcon />
