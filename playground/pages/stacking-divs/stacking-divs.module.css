@@ -1,0 +1,36 @@
+.Container {
+  padding: 1rem;
+}
+
+.Parent {
+  position: relative;
+}
+
+.Button {
+  position: absolute;
+  height: 55px;
+  width: 150px;
+}
+
+.Bottom {
+  left: 8px;
+  top: 8px;
+  background-color: #e9ecef;
+  border: 3px solid #2b2d42;
+}
+
+.Top {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background: #2b2d42;
+  border: 3px solid #2b2d42;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.Top:hover {
+  color: #2b2d42;
+  background-color: #e9ecef;
+}
