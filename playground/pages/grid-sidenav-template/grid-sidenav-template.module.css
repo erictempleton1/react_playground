@@ -1,15 +1,14 @@
 .Wrapper {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas:
-    "header header header"
-    "content content content";
   grid-template-rows: auto 1fr;
   min-height: 100vh;
 }
 
 .header {
+  grid-column: span 3;
   display: block;
+  border: 2px solid orange;
 }
 
 .sidebar {
@@ -17,20 +16,22 @@
 }
 
 .content {
+  grid-column: span 3;
   border: 2px solid blue;
-  grid-area: content;
 }
 
 @media (min-width: 768px) {
   .Wrapper {
     grid-template-columns: auto 1fr 1fr;
-    grid-template-areas: "sidebar content content";
     grid-template-rows: none;
   }
   .sidebar {
     display: block;
+    grid-column: span 1;
     border: 2px solid green;
-    grid-area: sidebar;
+  }
+  .content {
+    grid-column: span 2;
   }
   .header {
     display: none;

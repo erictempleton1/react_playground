@@ -1,4 +1,4 @@
-import styles from './dark-sidenav-simple-react.module.css';
+import styles from './grid-sidenav-template.module.css';
 
 const Index = () => (
   <div className={styles.Wrapper}>
