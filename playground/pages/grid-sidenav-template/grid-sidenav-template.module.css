@@ -1,39 +1,32 @@
-.Wrapper {
+.Wrapper {  
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr;
   grid-template-rows: auto 1fr;
   min-height: 100vh;
 }
 
-.header {
-  grid-column: span 3;
-  display: block;
+.Header {
   border: 2px solid orange;
 }
 
-.sidebar {
+.Sidenav {
   display: none;
 }
 
-.content {
-  grid-column: span 3;
+.Content {
   border: 2px solid blue;
 }
 
 @media (min-width: 768px) {
   .Wrapper {
-    grid-template-columns: auto 1fr 1fr;
+    grid-template-columns: auto 1fr;
     grid-template-rows: none;
   }
-  .sidebar {
+  .Sidenav {
     display: block;
-    grid-column: span 1;
     border: 2px solid green;
   }
-  .content {
-    grid-column: span 2;
-  }
-  .header {
+  .Header {
     display: none;
   }
 }

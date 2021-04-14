@@ -1,0 +1,68 @@
+.Wrapper {
+  --indigo-dye: hsla(212, 72%, 26%, 1);
+  --prussian-blue: hsla(215, 66%, 22%, 1);
+  --oxford-blue: hsla(213, 72%, 16%, 1);
+  --cadet-grey: hsla(209, 32%, 66%, 1);
+  --mint-cream: hsla(111, 24%, 94%, 1);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr;
+  min-height: 100vh;
+  color: var(--mint-cream);
+}
+
+.Header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+  background-color: var(--prussian-blue);
+}
+
+.Header__Icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.Header__Menu_Button {
+  color: var(--mint-cream);
+  background-color: inherit;
+  border: none;
+}
+
+.Header__Menu_Button:focus {
+  outline: none;
+}
+
+.Header__Menu_Icon {
+  margin-top: 0.25rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  transform: rotate(90deg);
+}
+
+.Header__Menu_Icon_Open {
+  transition: transform .3s;
+}
+
+.Sidenav {
+  display: none;
+}
+
+.Content {
+  color: var(--prussian-blue);
+}
+
+@media (min-width: 768px) {
+  .Wrapper {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: none;
+  }
+  .Sidenav {
+    display: block;
+    background-color: var(--prussian-blue);
+  }
+  .Header {
+    display: none;
+  }
+}
