@@ -1,0 +1,127 @@
+.CornflowerBlue {
+  background-color: cornflowerblue;
+}
+
+.DarkOrchid {
+  background-color: darkorchid;
+}
+
+.DarkSeaGreen {
+  background-color: darkseagreen;
+}
+
+
+.Container {
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.Card {
+  width: 200px;
+  min-width: 200px;
+  margin: 1rem;
+}
+
+.Card:hover .Card__Content {
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.Card:hover .Content__Text {
+  opacity: 0;
+}
+
+.Card:hover .Button {
+  opacity: 1;
+  transform: translateY(5px);
+}
+
+
+.Card__Header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  color: white;
+  font-size: 18px;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.Card__Header:hover {
+  opacity: 0.9;
+}
+
+.Header__Icon_Container {
+  text-decoration: none;
+  color: white;
+}
+
+.Header__Icon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.Header__Text {
+  text-decoration: none;
+  color: white;
+}
+
+
+.Card__Content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-bottom-left-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+}
+
+.Content__Text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: -40px;
+}
+
+.Text__Number { 
+  font-size: 28px;
+  font-weight: 600;
+}
+
+.Button {
+  display: flex;
+  align-items: center;
+  opacity: 0;
+  padding: 0.5rem 1.5rem;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.9);
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 0.75rem;
+  transform: translateY(15px);
+  transition: transform .2s ease-in-out;
+}
+
+.Button:hover {
+  background-color: rgb(236, 233, 233);
+}
+
+.Button__Icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  padding-right: 0.25rem;
+}
+
+
+@media (min-width: 768px) {
+  .Container {
+    flex-direction: row;
+  }
+}
