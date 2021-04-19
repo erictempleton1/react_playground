@@ -1,0 +1,70 @@
+.Container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: whitesmoke;
+}
+
+.Card {
+  padding: 2rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  background-color: white;
+}
+
+.Field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.Label {
+  margin-bottom: 0.25rem;
+}
+
+.Input {
+  font-family: inherit;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+  overflow: visible;
+  border-radius: 0.25rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  padding-top: 0.5rem;
+  border: 1px solid lightgray;
+}
+
+.Input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.1rem rgb(173, 216, 230, 0.7);
+}
+
+.Input:focus:required {
+  outline: none;
+  box-shadow: 0 0 0 0.1rem lightcoral;
+}
+
+.Input:focus:valid {
+  outline: none;
+  box-shadow: 0 0 0 0.1rem rgb(173, 216, 230, 0.7);
+}
+
+.Button {
+  border-radius: 0.25rem;
+  background-color: white;
+  padding: 0.5rem 1.5rem;
+  border: 1px solid lightgray;
+}
+
+.Button:hover {
+  background-color: whitesmoke;
+}
+
+.Button:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.1rem rgb(173, 216, 230, 0.7);
+}
+
