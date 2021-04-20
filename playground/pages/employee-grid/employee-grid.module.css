@@ -1,0 +1,87 @@
+.Wrapper {
+  --nyanza: #d8f3dcff;
+  --turquoise-green: #b7e4c7ff;
+  --turquoise-green-2: #95d5b2ff;
+  --ocean-green: #74c69dff;
+  --ocean-green-2: #52b788ff;
+  --illuminating-emerald: #40916cff;
+  --bottle-green: #2d6a4fff;
+  --brunswick-green: #1b4332ff;
+  --dark-jungle-green: #081c15ff;
+  color: var(--nyanza);
+  background-color: var(--dark-jungle-green);
+  padding: 1rem;
+
+}
+
+.Top__Wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 2rem;
+}
+
+.Top__Text {
+  font-size: 32px;
+  font-weight: 600;
+  padding-bottom: 0.5rem;
+}
+
+.Top__Sub_Text {
+  font-size: 18px;
+  font-weight: 600;
+  opacity: 0.8;
+}
+
+.Grid__Wrapper {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: auto;
+}
+
+.Card {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: var(--brunswick-green);
+  border-radius: 0.5rem;
+}
+
+.Card__Header {
+  display: flex;
+  align-items: center;
+}
+
+.Card__Avatar {
+  width: 80px;
+  height: 80px;
+}
+
+.Avatar__Image {
+  border-radius: 100%;
+}
+
+.Card__Title {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1rem;
+}
+
+.Title__Name {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.Title__Position {
+  opacity: 0.8;
+}
+
+.Card__Footer {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.Footer__Icon {
+  opacity: 0.8;
+  width: 1.5rem;
+  height: 1.5rem;
+}
