@@ -1,0 +1,52 @@
+.Wrapper {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  min-height: 100vh;
+  background-color: lightgray;
+}
+
+.Sidebar {
+  display: flex;
+  align-items: stretch;
+  color: white;
+}
+
+.Sidebar__Menu {
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  background-color: lightseagreen;
+}
+
+.Menu__Header {
+}
+
+.Menu__Links {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Link {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.Content {
+  border: 1px solid red;
+}
+
+.Side_Menu {
+  border: 1px solid purple;
+}
+
+.Icon {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.Icon__Large {
+  width: 3rem;
+  height: 3rem;
+}
