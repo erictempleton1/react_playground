@@ -7,7 +7,7 @@ const Index = () => (
         <div className={styles.Menu__Header}>
           <ChipSvg />
         </div>
-        <hr/>
+        <hr />
         <nav className={styles.Menu__Links}>
           <a className={styles.Link} href="#home"><HomeSvg /></a>
           <a className={styles.Link} href="#calendar"><CalendarSvg /></a>

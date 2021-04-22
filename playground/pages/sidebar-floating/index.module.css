@@ -7,7 +7,6 @@
 
 .Sidebar {
   display: flex;
-  align-items: stretch;
   color: white;
 }
 
@@ -16,9 +15,6 @@
   padding: 1rem;
   border-radius: 1rem;
   background-color: lightseagreen;
-}
-
-.Menu__Header {
 }
 
 .Menu__Links {
