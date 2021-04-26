@@ -1,0 +1,27 @@
+.Wrapper {
+  height: 500px;
+  background-color: whitesmoke;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.Tabs__Container {
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  height: 150px;
+  padding: 1rem;
+  background-color: paleturquoise;
+}
+
+.Content {
+}
+
+.Tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto;
+}
+
