@@ -5,35 +5,30 @@ const Index = () => {
   const [activeTab, setActiveTab] = useState(1);
   return (
     <div className={styles.Wrapper}>
-      <div className={styles.Tabs__Container}>
+      <div className={styles.Container}>
         <div className={styles.Content}>
-          <SwitchComponent active={activeTab}>
-            <Component1 name={1} />
-            <Component2 name={2} />
-            <Component3 name={3} />
+          <SwitchComponent activeTab={activeTab}>
+            <Content1 tab={1} />
+            <Content2 tab={2} />
+            <Content3 tab={3} />
           </SwitchComponent>
         </div>
-        <Tabs activeTab={activeTab} setActiveTab={setActiveTab} />
+        <div className={styles.Tabs}>
+          <button className={`${styles.Tab} ${activeTab === 1 ? styles.Tab__Active : ''}`} onClick={() => setActiveTab(1)}>Tab 1</button>
+          <button className={`${styles.Tab} ${activeTab === 2 ? styles.Tab__Active : ''}`} onClick={() => setActiveTab(2)}>Tab 2</button>
+          <button className={`${styles.Tab} ${activeTab === 3 ? styles.Tab__Active : ''}`} onClick={() => setActiveTab(3)}>Tab 3</button>
+        </div>
       </div>
     </div>
   );
-};
+}
 
-const Tabs = ({ activeTab, setActiveTab }) => (
-  <div className={styles.Tabs}>
-    <button onClick={() => setActiveTab(1)}>Tab 1</button>
-    <button onClick={() => setActiveTab(2)}>Tab 2</button>
-    <button onClick={() => setActiveTab(3)}>Tab 3</button>
-  </div>
+const SwitchComponent = ({ activeTab, children }) => (
+  children.filter(child => child.props.tab === activeTab)
 );
 
-const SwitchComponent = ({ active, children }) => (
-  children.filter(child => child.props.name === active)
-);
-
-
-const Component1 = () => <div>Component 1</div>;
-const Component2 = () => <div>Component 2</div>;
-const Component3 = () => <div>Component 3</div>;
+const Content1 = () => <div>Content 1</div>;
+const Content2 = () => <div>Content 2</div>;
+const Content3 = () => <div>Content 3</div>;
 
 export default Index;

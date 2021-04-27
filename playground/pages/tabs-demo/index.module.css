@@ -1,27 +1,41 @@
 .Wrapper {
-  height: 500px;
-  background-color: whitesmoke;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 3rem;
+  background-color: whitesmoke;
 }
 
-.Tabs__Container {
-  display: flex;
-  flex-direction: column;
-  width: 350px;
-  height: 150px;
-  padding: 1rem;
-  background-color: paleturquoise;
+.Container {
+  width: 450px;
 }
 
 .Content {
+  background-color: lightseagreen;
+  padding: 6rem;
+  border-radius: 1rem;
 }
 
 .Tabs {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: auto;
 }
 
+.Tab {
+  position: relative;
+  padding: 2rem 2.5rem;
+  background-color: whitesmoke;
+  border: none;
+}
+
+
+.Tab:focus {
+  outline: none;
+}
+
+.Tab__Active {
+  background-color: lightseagreen;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
