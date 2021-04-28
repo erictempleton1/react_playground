@@ -1,0 +1,91 @@
+.Container {
+  padding: 1rem;
+}
+
+.Email__Container {
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  background-color: #4b6cb7;
+}
+
+.Email__CTA_Text {
+  padding-bottom: 1rem;
+}
+
+.CTA_Text__Large {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.CTA_Text {
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.Input {
+  width: 100%;
+  overflow: visible;
+  font-size: 20px;
+  border-radius: 0.5rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.75rem;
+  border: 2px solid lightblue;
+}
+
+.Input:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgb(173, 216, 230, 0.5);
+}
+
+.Button {
+  background-color: rgb(45, 106, 79);
+  border-color: #40916c;
+  border-width: 1px;
+  color: white;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+}
+
+.Button:hover {
+  background-color: rgb(45, 106, 79, 0.8)
+}
+
+.Button:focus {
+  outline: none;
+  border-color: #d8f3dc;
+  box-shadow: 0 0 0 0.125em #d8f3dc;
+}
+
+.Input + .Button {
+  margin-top: 1rem;
+}
+
+@media (min-width: 425px) {
+  .Email__Form_Group {
+    display: flex;
+    align-items: center;
+  }
+
+  .Input {
+    flex: 1;
+  }
+
+  .Input + .Button {
+    margin-top: 0;
+    margin-left: 0.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .Email__Container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2.5rem;
+  }
+}
